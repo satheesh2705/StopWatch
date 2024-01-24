@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Digital-7';
+    src: url('digital-7.ttf');
+}
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    background-color: rgb(255, 0, 38);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;}
+
+.box{
+    background-color: #fff;
+    height: 250px;
+    width: 400px;
+    border-radius: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+    cursor: pointer;
+    box-shadow: -4px -4px 10px rgba(57, 9, 48, 0.5),
+    inset 5px 5px 11px rgba(95, 5, 107, 0.5),
+    inset -4px -4px 10px rgba(113, 5, 77, 0.5),
+    4px 4px 10px rgba(66, 4, 60, 0.3)
+}
+
+.box h1{
+    font-size: 23px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+.frame{
+    display: flex;
+    justify-content: space-evenly;
+}
+.button{
+    margin-top: 25px;
+}
+
+.button button{
+    border: none;
+    padding: 9px 27px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.hrs,
+.min,
+.sec,
+.ms,
+.colon{
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    font-family: 'Digital-7';
+    color: red;
+}
+
+.start{
+    background-color: rgb(12, 126, 12);
+}
+
+.stop{
+    background-color:rgb(87, 8, 113) ;
+}
+
+.restart{
+    background-color: blue;
+}
+
+
+.start-active,
+.stop-active{
+    pointer-events: none;
+    opacity: 0.7;
+}
